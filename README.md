@@ -25,7 +25,7 @@ Due to memory limitation the data is split into 10 smaller data sets. Change the
 ```
 Use the following command to train the network.
 ```
-python train.py --dirs=examples/0_in
+python generate.py configs/voxel/shapenet_grid32.yaml
 ```
 Use the tensorboard to visualize the training and validation results. The result is stored in the `out/voxels/shapenet_3plane/logs` folder.
 ```
@@ -33,7 +33,7 @@ tensorboard --logdir=/home/zeju/Documents/convolutional_occupancy_networks-maste
 ```
 To generate the use the following command to use our pre-trained model.
 ```
-python generate.py --dirs=examples/0_in
+python generate.py configs/voxel/pretrained/shapenet_grid32.yaml
 ```
 For evaluating the geometry reconstruction quality, use the 
 ```
