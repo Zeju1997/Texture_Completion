@@ -23,6 +23,10 @@ Due to memory limitation the data is split into 10 smaller data sets. Change the
 ```
 ./data_preprocessing.sh
 ```
+Use the following command to train the network.
+```
+python train.py --dirs=examples/0_in
+```
 Use the tensorboard to visualize the training and validation results. The result is stored in the `out/voxels/shapenet_3plane/logs` folder.
 ```
 tensorboard --logdir=/home/zeju/Documents/convolutional_occupancy_networks-master/out/voxels/shapenet_3plane/logs
@@ -30,6 +34,10 @@ tensorboard --logdir=/home/zeju/Documents/convolutional_occupancy_networks-maste
 To generate the use the following command to use our pre-trained model.
 ```
 python generate.py --dirs=examples/0_in
+```
+For evaluating the geometry reconstruction quality, use the 
+```
+python eval_meshes.py --dirs=examples/0_in
 ```
 For evaluating the color reconstruction quality, render images of the samples from the test set. Ground truth images and test images are stored in `data/my_dataset/03001627_testset_ply/rendered_images` and `out/voxels/shapenet_grid32/generation/meshes/03001627/rendered_images`. Copy the images to the `data/rendered_images` folder in **Texture Fields**.
 ```
