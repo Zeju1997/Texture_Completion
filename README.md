@@ -10,7 +10,7 @@ The from Texture Field
 
 ## Usage
 
-First, implement the three Github projects, you can find them in the following linkes: [Occupancy Network](https://github.com/autonomousvision/occupancy_networks), [Convolutional Occupancy Networks](https://github.com/autonomousvision/convolutional_occupancy_networks) and [Texture Fields](https://github.com/autonomousvision/texture_fields). <br>
+First, implement the three existing Github projects, you can find the original project under the following linkes: [Occupancy Network](https://github.com/autonomousvision/occupancy_networks), [Convolutional Occupancy Networks](https://github.com/autonomousvision/convolutional_occupancy_networks) and [Texture Fields](https://github.com/autonomousvision/texture_fields). <br>
 Tips: I could not use the environment.yaml file to create the working environment. I found it works when creating the conda environment manually with the following lines allways work. Install the packages based on their respective channel:
 
 ```
