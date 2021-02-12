@@ -1,0 +1,46 @@
+Presentation
+
+Project Recap
+State of the art shape reconstruction paper
+
+Architecture
+modified ConvOccNet
+
+Challenges:
+1) data-preprocessing pipeline
+2) merging of pre-trained
+
+Choose of loss function / Visualization
+1) l1 loss doesnot work -> cross entropy loss dominates
+
+Choose of feature dimension
+32 -> 64
+
+Choose of learning rate
+
+Voxel color
+1) middel point
+2) 9 points
+
+Progress
+1) overfitting to 
+
+Evaluation:
+1) Shape Evaluation
+2) Texture Evaluation
+
+Last Steps
+1) hyperparameter tuning
+
+Conclusions
+
+Problem
+1) Color prediction at the beginning <0
+2) Color value in the empty space
+3) Model size / GPU size
+
+Testing:
+1) 32 / 64 / 96
+2) 1024 / 2048
+3) learning rate: 0.5 / 1
+4) 0/1 or 0/255
