@@ -8,6 +8,17 @@ This project is developed within the course "Advanced Deep Learning for Computer
 The modified scripts from Occupancy Networks are used for data-processing, 
 The from Texture Field
 
+
+## Data Set and Results
+```
+./download_data.sh
+```
+
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
 ## Usage
 
 First, implement the three existing Github projects, you can find the original project under the following linkes: [Occupancy Network](https://github.com/autonomousvision/occupancy_networks), [Convolutional Occupancy Networks](https://github.com/autonomousvision/convolutional_occupancy_networks) and [Texture Fields](https://github.com/autonomousvision/texture_fields). <br>
@@ -48,10 +59,4 @@ python render_mesh_image.py
 To calculate the **ssim**, **l1 feature** and **FID** score of our model use the rendered images stored in the `data/rendered_images/gt` and `data/rendered_images/tf` folder:
 ```
 python evaluate_metrics.py
-```
-
-
-## Data Set and Results
-```
-./download_data.sh
 ```
