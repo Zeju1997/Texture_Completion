@@ -8,6 +8,16 @@ This project is developed within the course "Advanced Deep Learning for Computer
 The modified scripts from Occupancy Networks are used for data-processing, 
 The from Texture Field
 
+<div style="text-align: center">
+  <img src="pics/comparison.png" width="600">
+</div>
+<div style="text-align: center">
+  <img src="pics/comparison.png" width="600">
+</div>
+<div style="text-align: center">
+  <img src="pics/comparison.png" width="600">
+</div>
+
 
 ## Data Set and Results
 ```
