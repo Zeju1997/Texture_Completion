@@ -24,12 +24,13 @@ The from Texture Field
 
 Experimental comparison with other state-of-the-art [[1]](#1).
 
-#Method | #SSIM | #L1 | #FID | #IoU | #Chamfer Distance |
-#Im2Avatar | 0.85 | 0.25 | 59.7 | 0.17 | 0.27 |
-#PIFu | 0.86 | 0.24 | 70.3 | 0.34 | 0.27 |
-#Texture Fields | 0.93 | 0.20 | 30.3 | 0.46 | 0.20 |
-#SPSG | 0.93 | 0.19 | 29.0 | 0.66 | 0.09 | 
-#Ours | 0.89 | 0.22 | 61.9 | 0.59 | 0.04 | 
+| Method | SSIM | L1 | FID | IoU | Chamfer Distance |
+| :- | :-: | :-: | :-: | :-: | :-: |
+| **Im2Avatar** | 0.85 | 0.25 | 59.7 | 0.17 | 0.27 |
+| **PIFu** | 0.86 | 0.24 | 70.3 | 0.34 | 0.27 |
+| **Texture Fields** | **0.93** | 0.20 | 30.3 | 0.46 | 0.20 |
+| **SPSG** | **0.93** | **0.19** | **29.0** | **0.66** | 0.09 | 
+| **Ours** | 0.89 | 0.22 | 61.9 | 0.59 | **0.04** | 
 
 ## Usage
 
