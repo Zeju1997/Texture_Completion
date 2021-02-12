@@ -18,6 +18,11 @@ The from Texture Field
   <img src="pics/rendered_images.png" width="600">
 </div>
 
+<p float="left">
+  <img src="pics/comparison.png" width="390" />
+  <img src="pics/results.png" width="532" /> 
+</p>
+
 
 ## Data Set and Results
 ```
