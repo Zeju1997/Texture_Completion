@@ -1,0 +1,8 @@
+dirs: data/tes
+# angle: 0
+# name: test
+# pred: s
+# cond: d
+# no_opt: fd
+# pts: kjfd
+mode: grid
