@@ -8,20 +8,13 @@ This project is developed within the course "Advanced Deep Learning for Computer
 The modified scripts from Occupancy Networks are used for data-processing, 
 The from Texture Field
 
-<div style="text-align: center">
-  <img src="pics/comparison.png" width="390">
-</div>
-<div style="text-align: center">
-  <img src="pics/results.png" width="532">
-</div>
-<div style="text-align: center">
-  <img src="pics/rendered_images.png" width="600">
-</div>
-
 <p float="left">
   <img src="pics/comparison.png" width="390" />
   <img src="pics/results.png" width="532" /> 
 </p>
+<div style="text-align: center">
+  <img src="pics/rendered_images.png" width="600">
+</div>
 
 
 ## Data Set and Results
@@ -29,11 +22,19 @@ The from Texture Field
 ./download_data.sh
 ```
 
-Experimental comparison with other state-of-the-art approaches cite!!!!!!!!
+Experimental comparison with other state-of-the-art [[1]](#1).
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+Method | #SSIM | #L1 | #FID | #IoU | #Chamfer Distance | #6 | #7 | #8 | #9 | #10 | #11
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+Im2Avatar | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+PIFu | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Texture Fields | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+SPSG | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Ours | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
 
 ## Usage
 
@@ -76,3 +77,9 @@ To calculate the **ssim**, **l1 feature** and **FID** score of our model use the
 ```
 python evaluate_metrics.py
 ```
+
+## References
+<a id="1">[1]</a> 
+Dijkstra, E. W. (1968). 
+Go to statement considered harmful. 
+Communications of the ACM, 11(3), 147-148.
