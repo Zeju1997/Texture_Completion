@@ -1,0 +1,50 @@
+method: texnet
+data:
+  path_shapes: data/shapenet/chairs3dgen/
+  dataset_imgs_type: image_folder
+  camera_mode: shapenet
+  sdf_path: data/shapenet/chairs3dgen/sdf
+  img_format: png
+  input_img_format: png
+  img_size: 128
+  depth_format: png
+training:
+  out_dir: 'out/singleview/chairs'
+  batch_size: 6
+  model_selection_metric: loss_val
+  model_selection_mode: minimize
+  print_every: 100
+  visualize_every: 5000
+  checkpoint_every: 20000
+  validate_every: 20000
+  backup_every: 100000
+  moving_average_beta: 0
+  pc_subsampling: 2048
+  vis_fixviews: True
+  weight_pixelloss: 1.
+  weight_ganloss: 0.
+  experiment: 'conditional'
+  gradient_penalties_reg: 0.
+model:
+  decoder: each_layer_c_larger
+  encoder: resnet18
+  geometry_encoder: resnet
+  decoder_kwargs:
+    leaky: True
+    resnet_leaky: False
+  encoder_kwargs: {}
+  geometry_encoder_kwargs: {}
+  generator_bg_kwargs: {}
+  discriminator_kwargs: {}
+  z_dim: 512
+  c_dim: 512
+  white_bg: False
+  model_url:
+generation:
+  batch_size: 1
+test:
+  model_file: model_best.pt
+  vis_dir: 'out/singleview/chairs/eval_fix/'
+  dataset_split: 'test_vis' 
+  with_occnet: False
+  generation_mode: 'HD'

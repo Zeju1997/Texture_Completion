@@ -1,0 +1,17 @@
+method: texnet
+inherit_from: configs/singleview/texfields/matterport.yaml
+data:
+  path_shapes: data/matterport/test/
+  path_mesh: /mnt/raid/yawar/export_matterport_test/mesh/
+  dataset_imgs_type: image_folder
+  img_size: 256
+  loc: [48, 48, 48]
+  scale: 96
+generation:
+  batch_size: 1
+test:
+  model_file: model_best.pt
+  vis_dir: 'out/vis/matterport_gtgeo'
+  dataset_split: 'test_vis'
+  with_occnet: False
+  generation_mode: 'HD'
