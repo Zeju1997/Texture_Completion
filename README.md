@@ -76,6 +76,4 @@ python evaluate_metrics.py
 
 ## References
 <a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
+Dai, Angela, et al. "Spsg: Self-supervised photometric scene generation from rgb-d scans." arXiv preprint arXiv:2006.14660 (2020).
