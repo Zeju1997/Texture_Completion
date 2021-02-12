@@ -18,6 +18,7 @@ The from Texture Field
 
 
 ## Data Set and Results
+Use the following command to download the data and results. The folder `my_dataset` contains the ground truth meshes from the test set and their rendered images. The folder `my_shapenet` contains the pre-processed, whole ShapeNet, chair data set. The folder `shapenet_grid32` contains the trained model, and the predicted, completed meshes and their rendered images. 
 ```
 ./download_data.sh
 ```
@@ -50,7 +51,7 @@ Due to memory limitation the data is split into 10 smaller data sets. Change the
 ```
 Use the following command to train the network.
 ```
-python generate.py configs/voxel/shapenet_grid32.yaml
+python train.py configs/voxel/shapenet_grid32.yaml
 ```
 Use the tensorboard to visualize the training and validation results. The result is stored in the `out/voxels/shapenet_3plane/logs` folder.
 ```
