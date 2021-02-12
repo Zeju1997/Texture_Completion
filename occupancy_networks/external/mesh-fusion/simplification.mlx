@@ -1,0 +1,5 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Simplification: Quadric Edge Collapse Decimation">
+ </filter>
+</FilterScript>
