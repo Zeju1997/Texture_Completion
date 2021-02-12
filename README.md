@@ -23,7 +23,7 @@ Use the following command to download the data and results. The folder `my_datas
 ./download_data.sh
 ```
 
-Experimental comparison with other state-of-the-art [[1]](#1).
+Experimental comparison with other state-of-the-art approaches [[1]](#1).
 
 | Method | SSIM | L1 | FID | IoU | Chamfer Distance |
 | :- | :-: | :-: | :-: | :-: | :-: |
