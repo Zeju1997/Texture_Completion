@@ -44,12 +44,12 @@ conda install -c cython==0.29.2
 conda install pytorch==1.0.0 torchvision==0.2.1 -c pytorch
 conda install -c conda-forge matplotlib-base==3.0.3
 ```
-Due to memory limitation the data is split into 10 smaller data sets. Change the **data_file** variable in the **generate_dataset.py**, **1_scale.py**, **2_fusion.py** and **sample_mesh.py** to the respective data file, e.g. **data_1.lst**. Use the following command from **Occupancy Networks** to generate data for the network. To make the data pre-processing work, implement the [PyMarchingCubes](https://github.com/JustusThies/PyMarchingCubes) in the `external` folder of the **Occupancy Networks**. Also the `external/mesh-fusion` module consists of three project, [pyrender](https://github.com/griegler/pyrender), [pyfusion](https://github.com/griegler/pyfusion) and [PyMCubes](https://github.com/pmneila/PyMCubes), which did not work for me and I had to implement them seperately.
+Due to memory limitation the data is split into 10 smaller data sets. Change the **data_file** variable in the **generate_dataset.py**, **1_scale.py**, **2_fusion.py** and **sample_mesh.py** to the respective data file, e.g. **data_1.lst**. Use the following command from **Occupancy Networks** to generate data for the network. To make the data pre-processing work, implement the [PyMarchingCubes](https://github.com/JustusThies/PyMarchingCubes) in the `external` folder of the **Occupancy Networks**. Also the `external/mesh-fusion` module consists of three project, [pyrender](https://github.com/griegler/pyrender), [pyfusion](https://github.com/griegler/pyfusion) and [PyMCubes](https://github.com/pmneila/PyMCubes), which did not work for me and I had to implement them seperately. Afterwards run the following command in **Occupancy Networkss**.
 
 ```
 ./data_preprocessing.sh
 ```
-Use the following command to train the network.
+Use the following command to train the network and run the following commands in **Convolutional Occupancy Networks**.
 ```
 python train.py configs/voxel/shapenet_grid32.yaml
 ```
@@ -70,7 +70,7 @@ For evaluating the color reconstruction quality, render images of the samples fr
 python render_mesh_image.py
 ```
 
-To calculate the **ssim**, **l1 feature** and **FID** score of our model use the rendered images stored in the `data/rendered_images/gt` and `data/rendered_images/tf` folder:
+To calculate the **SSIM**, **l1 Feature** and **FID** score of our model use the rendered images stored in the `data/rendered_images/gt` and `data/rendered_images/tf` folder and run the following command in **Texture Fields**:
 ```
 python evaluate_metrics.py
 ```
