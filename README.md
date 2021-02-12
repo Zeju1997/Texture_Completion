@@ -49,3 +49,9 @@ To calculate the **ssim**, **l1 feature** and **FID** score of our model use the
 ```
 python evaluate_metrics.py
 ```
+
+
+## Data Set and Results
+```
+./download_data.sh
+```
