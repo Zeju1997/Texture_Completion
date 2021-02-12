@@ -1,7 +1,7 @@
 #!/bin/bash
-mkdir -p data
-cd data
+mkdir -p tmp
+cd tmp
 echo "Start downloading ..."
-wget https://s3.eu-central-1.amazonaws.com/avg-projects/convolutional_occupancy_networks/data/synthetic_room_dataset.zip
-unzip synthetic_room_dataset.zip
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_XpqaXd02Ct4eB375PN6V9jvG0QLYPxu' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1_XpqaXd02Ct4eB375PN6V9jvG0QLYPxu" -O data && rm -rf /tmp/cookies.txt
+unzip data.zip
 echo "Done!"
