@@ -19,7 +19,7 @@ conda install -c cython==0.29.2
 conda install pytorch==1.0.0 torchvision==0.2.1 -c pytorch
 conda install -c conda-forge matplotlib-base==3.0.3
 ```
-Due to memory limitation the data is split into 10 smaller data sets. Change the **data_file** variable in the **generate_dataset.py**, **1_scale.py**, **2_fusion.py** and **sample_mesh.py** to the respective data file, e.g. **data_1.lst**. Use the following command from **Occupancy Networks** to generate data for the network. 
+Due to memory limitation the data is split into 10 smaller data sets. Change the **data_file** variable in the **generate_dataset.py**, **1_scale.py**, **2_fusion.py** and **sample_mesh.py** to the respective data file, e.g. **data_1.lst**. Use the following command from **Occupancy Networks** to generate data for the network. To make the data pre-processing work, implement the [PyMarchingCubes](https://github.com/JustusThies/PyMarchingCubes) in the `external` folder of the **Occupancy Networks**.
 ```
 ./data_preprocessing.sh
 ```
