@@ -139,7 +139,7 @@ print('Total number of parameters: %d' % nparameters)
 
 print('output path: ', cfg['training']['out_dir'])
 
-gradient_accumulations = 1
+gradient_accumulations = 8
 
 # training shape model
 while True:
@@ -174,12 +174,13 @@ while True:
                     out = generator.generate_mesh(data_vis['data'], it, data_vis['it'])
                 # Get statisticsself.decoder
                 try:
-                    mesh, stats_dict = out
+                    mesh, vertices, triangles, stats_dict = out
                 except TypeError:
-                    mesh, stats_dict = out, {}
+                    mesh, vertices, triangles, stats_dict = out, {}
 
-                # mesh.export(os.path.join(out_dir, 'vis', '{}_{}_{}.off'.format(it, data_vis['category'], data_vis['it'])))
-                mesh.export(os.path.join(out_dir, 'vis', '{}_{}_{}.obj'.format(it, data_vis['category'], data_vis['it'])))
+                mesh_out_file = os.path.join(out_dir, 'vis', '{}_{}_{}.ply'.format(it, data_vis['category'], data_vis['it']))
+                mesh.export(mesh_out_file)
+                # mesh.export(os.path.join(out_dir, 'vis', '{}_{}_{}.obj'.format(it, data_vis['category'], data_vis['it'])))
 
         # Save checkpoint
         if (checkpoint_every > 0 and (it % checkpoint_every) == 0):
