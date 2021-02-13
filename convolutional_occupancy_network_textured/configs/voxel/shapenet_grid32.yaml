@@ -31,18 +31,15 @@ model:
     unet3d_kwargs:
       num_levels: 3
       f_maps: 32
-      # in_channels: 32
-      # out_channels: 32
       in_channels: 32
       out_channels: 32
   main_decoder: main_decoder
   main_decoder_kwargs:
     sample_mode: bilinear # bilinear / nearest
     hidden_size: 32
-    # hidden_size: 32
 training:
   out_dir:  out/voxels/shapenet_grid32
-  batch_size: 1 # 8
+  batch_size: 8 # 8
   model_selection_metric: iou
   model_selection_mode: maximize
   # print_every: 1 # 100
@@ -50,11 +47,11 @@ training:
   # validate_every: 5000 # 10000
   # checkpoint_every: 2000 # 2000
   # backup_every: 5000 # 10000
-  print_every: 1
-  visualize_every: 100
-  validate_every: 50
-  checkpoint_every: 200
-  backup_every: 50
+  print_every: 100
+  visualize_every: 5000
+  validate_every: 5000
+  checkpoint_every: 2000
+  backup_every: 5000
   n_workers: 8
   n_workers_val: 4
 test:
@@ -62,7 +59,7 @@ test:
   eval_mesh: true
   eval_pointcloud: false
 generation:
-  vis_n_outputs: 0
+  vis_n_outputs: 2
   refine: false
   n_x: 128
   n_z: 1
