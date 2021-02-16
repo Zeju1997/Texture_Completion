@@ -1,6 +1,7 @@
 # Texture_Completion
 
-This project is developed within the course "Advanced Deep Learning for Computer Vision" at the TU Munich. The supervisor for my project is Yawar Siddiqui. This project is based on three other projects:
+<!---This project is developed within the course "Advanced Deep Learning for Computer Vision" at the TU Munich. The supervisor for my project is Yawar Siddiqui.---> 
+This project is based on three other projects:
 * Occupancy Networks
 * Convolutional Occupancy Networks
 * Texture Fields
