@@ -10,8 +10,8 @@ The modified scripts from Occupancy Networks are used for data-processing,
 The from Texture Field
 
 <p float="left">
-  <img src="pics/comparison.png" width="390" />
-  <img src="pics/results.png" width="532" /> 
+  <img src="pics/comparison.png" width="367" />
+  <img src="pics/results.png" width="502" /> 
 </p>
 <div style="text-align: center">
   <img src="pics/rendered_images.png" width="600">
